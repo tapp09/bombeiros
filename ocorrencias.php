@@ -4,13 +4,13 @@
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="/teste/css/ocorrencias.css">
+<link rel="stylesheet" href="/bombeiros/css/ocorrencias.css">
 <title>Tipos Ocorrências</title>
 
 </head>
 <body>
 <header>
-   <img src="/teste/images/logo_medicina.png" alt="Logo dos Bombeiros Voluntários">
+   <img src="/bombeiros/images/logo_medicina.png" alt="Logo dos Bombeiros Voluntários">
    <h1>Bombeiros Voluntários</h1>
 </header>
 <div class="container">
