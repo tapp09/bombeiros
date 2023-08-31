@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="/teste/css/objetos.css">
+<title>objetos</title>
+</head>
+<body>
+<header>
+   <img src="/teste/images/logo_medicina.png" alt="Logo dos Bombeiros Voluntários">
+   <h1>Bombeiros Voluntários</h1>
+</header>
+<div class="container">
+    <div class="scrollable-content">
+        <h2>OBJETOS RECOLHIDOS</h2>
+        <div class="separator"></div>
+        <div class="checkbox-list">
+            <label><input type="checkbox"><span class="objetos">NENHUM</span></label>
+            <label><input type="checkbox" id="outrosCheckboxobj"><span class="objetos">SIM</span></label>
+            <textarea id="outrosInputobj" class="outros-input text-input" rows="16" placeholder="Informe os objetos" disabled></textarea>
+        </div>
+    </div>
+</div>
+<footer>
+    <a href="vitima.html" class="botao">Voltar</a>
+    <a href="equipe.html" class="botao">Próximo</a>
+</footer>
+<script>
+    const outrosCheckboxobj = document.getElementById('outrosCheckboxobj');
+    const outrosInputobj = document.getElementById('outrosInputobj');
+
+    outrosCheckboxobj.addEventListener('change', function() {
+        outrosInputobj.disabled = !this.checked;
+    });
+</script>
+</body>
+</html>
