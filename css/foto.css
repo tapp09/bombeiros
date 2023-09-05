@@ -1,0 +1,166 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+
+
+
+  }
+ 
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+  }
+
+  header img {
+    max-width: 60px; /* Ajuste o tamanho da imagem conforme necessário */
+    margin-left: 20px;
+  }
+
+  header h1 {
+    margin: 0;
+    bottom: 15px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+  header {
+    background-color: #0B356D;
+    color: #f0f0f0;
+    text-align: center;
+    padding: 18px;
+
+  }
+
+  footer {
+    width: 95%;
+    position: fixed;
+    bottom: 0;
+    background-color: #0B356D;
+    color: #f0f0f0;
+    text-align: center;
+    padding: 18px;
+    justify-content: center; /* Alinhamento horizontal */
+    align-items: center; /* Alinhamento vertical */
+  }
+
+  .container {
+    max-width: 800px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    color: #474747;
+     height: 100%;
+  }
+
+  .form-group {
+    margin-bottom: 15px;
+  }
+
+  .form-group label {
+    display: block;
+    font-weight: bold;
+  }
+
+  .form-group input[type="text"],
+  .form-group select {
+    width: 90%;
+    padding: 8px;
+    border: 1px solid #00AAE5;
+    border-radius: 4px;
+  }
+
+  .form-group .checkbox-group {
+    display: inline-block;
+  }
+
+  .form-group .checkbox-group label {
+    margin-right: 10px;
+  }
+
+  .form-group .checkbox-group input[type="radio"] {
+    margin-right: 5px;
+    float: left;
+  }
+
+  .clear {
+    clear: both;
+  }
+  .separator {
+    border-top: 2px solid #00AAE5;
+    margin: 10px 1px;
+  }
+
+  .fotoe {
+    width: 90%;
+    padding: 6px;
+    border: 2px solid #00AAE5;
+    border-radius: 4px;
+    text-align: center; /* Alinha o texto horizontalmente ao centro */
+    margin: 0 auto; /* Centraliza o botão horizontalmente */
+    display: block; /* Define como bloco para que o margin funcione */
+  }
+
+  .fotol {
+    width: 90%;
+    padding: 6px;
+    border: 2px solid #e50800;
+    border-radius: 4px;
+    text-align: center; /* Alinha o texto horizontalmente ao centro */
+    margin: 0 auto; /* Centraliza o botão horizontalmente */
+    display: block; /* Define como bloco para que o margin funcione */
+  }
+  #fileInput {
+    opacity: 0;
+    position: absolute;
+    width: 0;
+    height: 0;
+}
+.custom-file-button {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #0073e6;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: center; /* Alinha o texto horizontalmente ao centro */
+    margin: 0 auto; /* Centraliza o botão horizontalmente */
+    display: block; /* Define como bloco para que o margin funcione */
+    width: fit-content;
+    
+}
+
+.custom-file-button:hover {
+    background-color: #005aa9;
+}
+  textarea {
+    width: 90%;
+    padding: 8px;
+    border: 1px solid #00AAE5;
+    border-radius: 4px
+  }
+
+  .botao {
+    padding: 10px 30px;
+    background-color: #ffffff; /* Cor de fundo do botão */
+    color: #0B356D; /* Cor do texto do botão */
+    text-decoration: none;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  .scrollable-content {
+    max-height: calc(100vh - 200px); /* Ajuste conforme necessário */
+    overflow-y: auto; /* Cria uma barra de rolagem vertical quando necessário */
+  }
+  .photo-container {
+    text-align: center; /* Centraliza os elementos horizontalmente */
+}
+
+#preview {
+    margin-bottom: 20px; /* Espaço entre as fotos e os botões */
+}
