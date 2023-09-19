@@ -6,5 +6,5 @@
 
     // Para voltar no formulário:
 
-    header("Location: ocorrencias.php");
+    header("Location: cadastrop.html");
 ?>
