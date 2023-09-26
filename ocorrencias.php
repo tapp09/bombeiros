@@ -42,7 +42,7 @@
     </div>
 <footer>
     <a href="cod.html" class="botao">Voltar</a>
-    <a href="problemas.html" class="botao">Próximo</a>
+    <a href="problemas.php" class="botao">Próximo</a>
 </footer>
 </body>
 </html>
