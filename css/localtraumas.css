@@ -74,7 +74,7 @@ body {
   .form-group input[type="text"],
   .form-group select {
 
-    width: 90%;
+    width: 40%;
     padding: 8px;
     border: 1px solid #7adeff;
     border-radius: 4px;
@@ -116,4 +116,20 @@ body {
   .scrollable-content {
     max-height: calc(100vh - 180px); /* Ajuste conforme necessário */
     overflow-y: auto; /* Cria uma barra de rolagem vertical quando necessário */
+  }
+
+  table {
+    width: 80%; /* Defina a largura da tabela aqui (porcentagem ou valor em pixels) */
+    border-collapse: collapse;
+    margin: 0 auto; /* Centralizar a tabela horizontalmente */
+  }
+
+  th, td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+  }
+
+  th {
+    background-color: #f2f2f2;
   }

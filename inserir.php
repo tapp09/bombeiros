@@ -11,5 +11,5 @@
     $resultado = $comando->execute();
 
     // Para voltar no formulário:
-    header("Location: vitima.html");
+    header("Location: index.php");
 ?>

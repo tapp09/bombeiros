@@ -30,8 +30,14 @@
         <label for="senha">Senha:</label> 
         <input type="password" id="senha" name="senha" required><br><br>
     
-        <br><br><br><br>
+        <br><br><br>
+        
+        
+        <footer>
         <input type="submit" value="Cadastrar">
+       
+        </footer>
+       
     </form>
        
 </div>
