@@ -53,7 +53,7 @@ body {
     align-items: center; /* Alinhamento vertical */
   }
   .container {
-    max-width: 800px;
+    max-width: 100%;
     margin: 0 auto;
     padding: 20px;
     background-color: white;
@@ -119,17 +119,33 @@ body {
   }
 
   table {
-    width: 80%; /* Defina a largura da tabela aqui (porcentagem ou valor em pixels) */
+   /* Defina a largura da tabela aqui (porcentagem ou valor em pixels) */
     border-collapse: collapse;
     margin: 0 auto; /* Centralizar a tabela horizontalmente */
   }
 
-  th, td {
-    border: 1px solid #ccc;
-    padding: 8px;
+  th {
+    border: 2px solid #000000;
+    padding: 2px;
+    text-align: center;
+   
+  }
+
+  td {
+   
+    padding: 3px;
     text-align: left;
   }
 
-  th {
-    background-color: #f2f2f2;
+  tr td input[type="text"] {
+    width: 160px;
+    height: 20px;
+    border: 1px solid #00ace5ac;
   }
+
+  select#ladof
+  {
+    border: 1px solid #00ace5ac;
+    
+  }
+
