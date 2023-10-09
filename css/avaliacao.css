@@ -4,6 +4,9 @@ body {
     padding: 0;
     background-color: #f0f0f0;
     overflow-y: hidden;
+    width: 100%;
+    height: 100vh;
+
   }
  
   header {
@@ -38,7 +41,7 @@ body {
     color: #AF0606; /* Cor do texto */
     margin-top: 5px; /* Espaço acima do título */
     font-style: bold;
-    padding-left: 22%;
+    padding-left:22%;
   }
 
   h4 {
@@ -52,22 +55,25 @@ body {
     color: #f0f0f0;
     text-align: center;
     padding: 18px;
+    
 
   }
 
-  footer {
-    width: 95%;
-    position: fixed;
-    bottom: 0;
-    background-color: #0B356D;
-    color: #f0f0f0;
-    text-align: center;
-    padding: 18px;
-    justify-content: center; /* Alinhamento horizontal */
-    align-items: center; /* Alinhamento vertical */
-  }
+    footer {
+      width: 100%;
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      background-color: #0B356D;
+      color: #f0f0f0;
+      text-align: center;
+      padding: 18px;
+      justify-content: center; /* Alinhamento horizontal */
+      align-items: center; /* Alinhamento vertical */
+    }
   .container {
-    max-width: 800px;
+    max-width: 100%;
+    height: 100vh;
     margin: 0 auto;
     padding: 20px;
     background-color: white;
