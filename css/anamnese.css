@@ -137,7 +137,7 @@ body {
   
 
   .scrollable-content {
-    max-height: calc(100vh - 200px); /* Ajuste conforme necessário */
+    max-height: calc(100vh - 300px); /* Ajuste conforme necessário */
     overflow-y: auto; /* Cria uma barra de rolagem vertical quando necessário */
   }
  
@@ -169,36 +169,60 @@ body {
     color: #999; /* Cor da fonte quando desabilitada */
   }
 
+ 
+
+.text-input {
+    color: #474747;
+    border-color: #007bff; /* Cor da borda quando habilitada */
+    height: auto;
+  }
+
   .text-input {
-    display: inline-block;
-    width: 45px; /* Ajuste o tamanho conforme necessário */
-    height: 10px;
-    margin-left: 10px; /* Ajuste a margem conforme necessário para o espaçamento desejado */
-    border-color: #00AAE5;
-}
+    width: 90%; /* Largura da caixa de texto */
+    padding: 15px; /* Espaçamento interno */
+    border: 1px solid #ccc; /* Borda */
+    border-radius: 4px; /* Arredondamento da borda */
+    background-color: #f0f0f0; /* Cor de fundo */
+    color: #333; /* Cor da fonte */
+    font-size: 15px; /* Tamanho da fonte */
+  }
+  
+  .scrollable-content {
+    max-height: calc(100vh - 200px); /* Ajuste conforme necessário */
+    overflow-y: auto; /* Cria uma barra de rolagem vertical quando necessário */
+  }
 
-.outros-input {
-  color: #474747;
-  width: 90%; /* Largura da caixa de texto */
-  padding: 15px; /* Espaçamento interno */
-  border: 1px solid #ccc; /* Borda */
-  border-radius: 4px; /* Arredondamento da borda */
-  background-color: #f0f0f0; /* Cor de fundo */
-  font-size: 15px; /* Tamanho da fonte */
-  border-color: #00AAE5;
-}
+  .aov {
+    font-weight: bold;
+    margin-right: 5px;
+  }
+
+  
+  .checkbox-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .checkbox-list label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .checkbox-list input[type="checkbox"] {
+    margin-right: 10px;
+    width: 20px; /* Largura da checkbox personalizada */
+    height: 20px; /* Altura da checkbox personalizada */
+    border-color: #007bff;
+  }
 
 
+    /* Estilo para as subcategorias */
+    .suboptions {
+        margin-left: 30px; /* Ajuste o valor conforme necessário */
+      }
 
-/* Estilo para cada item da lista de checkboxes */
-.checkbox-list > label {
-  display: flex;
-  align-items: center; /* centraliza verticalmente o input e o span */
-  gap: 7px; /* espaçamento entre o span e o input */
-  flex-wrap: nowrap; /* evita que o input vá para a linha de baixo */
-}
-.materiais-label, .materiais {
-  display: inline-block;
-  width: 150px; /* Ajuste a largura conforme necessário para alinhar os rótulos das categorias. */
-  margin-right: 10px; /* Ajuste a margem conforme necessário para o espaçamento entre o rótulo e o checkbox. */
-}
+  .scrollable-content {
+    overflow-y: auto; /* Cria uma barra de rolagem vertical quando necessário */
+  }

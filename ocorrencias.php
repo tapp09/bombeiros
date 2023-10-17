@@ -37,12 +37,30 @@
         <label><input type="checkbox"><span class="tiposocorrencias">TRANSFERÊNCIA</span></label>
         <label><input type="checkbox"><span class="tiposocorrencias">CHOQUE ELÉTRICO</span></label>
         <label><input type="checkbox"><span class="tiposocorrencias">DESABAMENTO</span></label>
-        <label><input type="checkbox"><span class="tiposocorrencias">nada</span></label>
+
+        
+        <label><input type="checkbox"><span>nada</span></label>
     </div>
     </div>
 <footer>
     <a href="cod.html" class="botao">Voltar</a>
     <a href="problemas.php" class="botao">Próximo</a>
 </footer>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+    
+    checkboxes.forEach(checkbox => {
+        checkbox.addEventListener('change', function () {
+            checkboxes.forEach(otherCheckbox => {
+                if (otherCheckbox !== checkbox) {
+                    otherCheckbox.checked = false;
+                }
+            });
+        });
+    });
+});
+</script>
 </body>
 </html>
