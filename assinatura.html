@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/bombeiros/css/assinatura.css">
+    <title>assinatura</title>
+</head>
+<body>
+    <header>
+       <img src="/bombeiros/images/logo_medicina.png" alt="Logo dos Bombeiros Voluntários">
+       <h1>Bombeiros Voluntários</h1>
+    </header>
+
+    <div class="container">
+        <div class="scrollable-content">
+            <h2>ASSINATURA</h2>
+       
+            <div class="separator"></div>
+            
+            <canvas id="signature-pad"></canvas>
+            <div id="button-container">
+              <button id="clear-button">Limpar</button>
+              <button id="save-button">Salvar Assinatura</button>
+            </div>
+
+<script>
+  const canvas = document.getElementById('signature-pad');
+  const clearButton = document.getElementById('clear-button');
+  const saveButton = document.getElementById('save-button');
+  const ctx = canvas.getContext('2d');
+  let drawing = false;
+
+  canvas.addEventListener('mousedown', () => {
+    drawing = true;
+  });
+
+  canvas.addEventListener('mousemove', (e) => {
+    if (drawing) {
+      ctx.lineTo(e.clientX - canvas.getBoundingClientRect().left, e.clientY - canvas.getBoundingClientRect().top);
+      ctx.stroke();
+    }
+  });
+
+  canvas.addEventListener('mouseup', () => {
+    drawing = false;
+    ctx.beginPath();
+  });
+
+  clearButton.addEventListener('click', () => {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+  });
+
+  saveButton.addEventListener('click', () => {
+    const signatureData = canvas.toDataURL(); // Obtenha a imagem da assinatura em formato de dados
+    // Envie a assinatura para o servidor ou faça o que desejar com ela
+  });
+</script>
+
+    </div>
+    <footer>
+        <a href="recusa.html" class="botao">Voltar</a>
+          <a href="responsavel.html" class="botao">Próximo</a>
+      </footer>
+</body>
+</html>

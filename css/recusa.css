@@ -1,0 +1,149 @@
+/* Estilo do corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    overflow-y: hidden;
+    width: 100%;
+    height: 100vh;
+  }
+  
+  /* Estilo do cabeçalho */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0B356D;
+    color: #f0f0f0;
+    text-align: center;
+    padding: 18px;
+  }
+  
+  header img {
+    max-width: 60px;
+    margin-left: 20px;
+  }
+  
+  header h1 {
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    bottom: 15px;
+  }
+  
+  /* Estilo do contêiner principal */
+  .container {
+    max-width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    color: #474747;
+    font-weight: bold;
+  }
+  
+  /* Estilo do título */
+  h2 {
+    font-size: 24px;
+    color: #0B356D;
+    margin-top: 5px;
+    font-weight: bold;
+    margin: 10px;
+  }
+  
+  /* Estilo do subtítulo */
+  h3 {
+    font-size: 15px;
+    color: #AF0606;
+    margin-top: 5px;
+    font-weight: bold;
+    padding-left: 12px;
+  }
+  
+  /* Estilo das caixas de texto */
+  input[type="text"] {
+    width: 90%;
+    padding: 8px;
+    border: 1px solid #00AAE5;
+    border-radius: 4px;
+  }
+  
+  /* Estilo do campo de assinatura */
+  canvas {
+    border: 1px solid #ccc;
+  }
+  
+  /* Estilo do botão de envio */
+  input[type="submit"] {
+    padding: 10px 30px;
+    background-color: #ffffff;
+    color: #0B356D;
+    text-decoration: none;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  /* Estilo do rodapé */
+  footer {
+    width: 100%;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    background-color: #0B356D;
+    color: #f0f0f0;
+    text-align: center;
+    padding: 18px;
+    justify-content: center; /* Alinhamento horizontal */
+    align-items: center; /* Alinhamento vertical */
+  } 
+  
+  /* Estilo da linha separadora */
+  .separator {
+    border-top: 2px solid #00AAE5;
+    margin: 15px;
+  }
+  
+  /* Estilo das caixas de seleção */
+  .checkbox-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .checkbox-list label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .checkbox-list input[type="checkbox"] {
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+    border-color: #007bff;
+  }
+  
+  
+  /* Estilo do conteúdo rolável */
+  .scrollable-content {
+    max-height: calc(100vh - 200px);
+    overflow-y: auto;
+  }
+  
+  .botao {
+    
+    padding: 10px 30px;
+    background-color: #ffffff; /* Cor de fundo do botão */
+    color: #0B356D; /* Cor do texto do botão */
+    text-decoration: none;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+
+  .parênteses {
+    color: red; /* Altere a cor conforme necessário */
+    font-weight: bold; /* Altere o peso da fonte conforme necessário */
+  }
