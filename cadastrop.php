@@ -14,6 +14,7 @@
    <h1>Bombeiros Voluntários</h1>
 </header>
 <div class="container">
+  <form action="inserir.php" method="POST">
   <div class="form-group">
     <label for="nome">NOME PACIENTE</label>
     <input type="text" id="nome" name="nome" required>
@@ -47,7 +48,8 @@
   </div>
 </div>
 <footer>
-    <a href="hospital.html" class="botao">Próximo</a>
+    <input type="submit" value="enviar">
 </footer>
+</form>
 </body>
 </html>

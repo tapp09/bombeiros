@@ -1,15 +1,21 @@
 <?php
     include("conecta.php");
 
+
     $nome  = $_POST["nome"];
     $cpf      = $_POST["cpf"];
+    $idade     = $_POST["idade"];
     $telefone     = $_POST["telefone"];
-    $email     = $_POST["email"];
-    $senha      = $_POST["senha"];
+    $genero     = $_POST["genero"];
+    $nomeacompanhante  = $_POST["nome-acompanhante"];
+    $idadeacompanhante     = $_POST["idade-acompanhante"];
 
-    $comando = $pdo->prepare("INSERT INTO cadastro VALUES('$nome','$cpf','$telefone', '$email','$senha', null)" );
-    $resultado = $comando->execute();
+    if (isset($_POST['enviar'])) {
+        $comando = $pdo->prepare("INSERT INTO paciente VALUES('$nome','$cpf','$idade', '$telefone','$genero', '$nomeacompanhante','$idadeacompanhante', null)" );
+        $resultado = $comando->execute();
+    }
+    
 
     // Para voltar no formulário:
-    header("Location: index.php");
+    header("Location: hospital.php");
 ?>
