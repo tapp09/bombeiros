@@ -12,7 +12,7 @@
        <h1>Bombeiros Voluntários</h1>
     </header>
     <div class="container">
-    <form action="inserir.php" method="POST">
+    <form action="inserirhospital.php" method="POST">
      <br>
       <div class="form-group">
         <label for="hospital">HOSPITAL</label>
@@ -31,7 +31,7 @@
       <br><br>  <br><br>  <br><br>  <br><br><br>
     </div>
     <footer>
-        <input type="submit" value="Próximo" />
+        <input type="submit" name="Proximo"value="Próximo" />
     </footer>
     </form>
     </body>

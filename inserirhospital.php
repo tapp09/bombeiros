@@ -1,21 +1,24 @@
 <?php
-    include("conecta.php");
-
-    $_SESSION["id"] = $pacienteexisteId;
     session_start();
+    include("conecta.php");
     $id = $_SESSION["id_paciente"];
 
-    $hospital  = $_POST["hospital"];
-    $local  = $_POST["local"];
-    $data     = $_POST["data"];
 
+    if (isset($_POST["Proximo"])) {
 
-    if (isset($_POST['Próximo'])) {
-        $comando = $pdo->prepare("INSERT INTO hospital VALUES('$hospital','$local', '$data')" );
+        $hospital  = $_POST["hospital"];
+        $local  = $_POST["local"];
+        $data     = $_POST["data"];
+
+        $comando = $pdo->prepare("INSERT INTO hospital(hospital, local, data, id_paciente) VALUES('$hospital', $local, $data, $id)");
         $resultado = $comando->execute();
+        $pacienteexisteId = $pdo->lastInsertId(); 
+        $_SESSION["id_paciente"] = $pacienteexisteId;
+        
+
     }
     
 
     // Para voltar no formulário:
-    header("Location: hospital.php");
+    header("Location: index.php");
 ?>

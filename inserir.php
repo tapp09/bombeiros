@@ -1,6 +1,6 @@
 <?php
     include("conecta.php");
-
+    session_start();
 
     $nome  = $_POST["nome"];
     $cpf      = $_POST["cpf"];
